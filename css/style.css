@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+
+.header{
+    background-color: #333;
+}
+
+/* navbar */
+.nav-item{
+    padding: 0 1rem;
+}
+.nav-link{
+    position: relative;
+    cursor: pointer;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+.navbar-nav {
+    padding: 1px;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+    transition: ease-in-out all 500ms;
+    color: orange;
+    
+}
+@media screen  and (max-width:1400px){
+    .navbar-brand{
+        padding-left:2rem ;
+    }
+}
+@media screen  and (max-width:768px){
+    .navbar-brand{
+        padding-left:5px ;
+        line-height: 50px;
+    }
+    .navbar ul{
+        text-align: center;
+    }
+   .navbar li{
+       line-height: 35px;
+   }
+   .navbar  a:hover, .navbar a:active{
+       border: none !important;
+       color: orange !important ;
+   }
+    
+
+}
+.icons{
+    position: absolute;
+    bottom: 5%;
+    left: 10%;
+    color: #fff;
+}
+.icons span:not(:last-child){
+    padding-right: 1rem;
+}
+.icons span{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.icons span:hover{
+    color: #dd9a05;
+}
+@media screen and (max-width:700px) {
+    .icons{
+        bottom: -8%;
+        left: 90%;
+
+    }
+}
+
+
+/* .home */
+
+.home{
+    background-color: #333;
+}
+.content-home h6{
+    color: rgb(219, 219, 219);
+
+}
+.content-home h1{
+    font-weight: bold;
+}
+.home-img{
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    border: 9px solid orange;
+}
+.content-home .btn:hover{
+    background-color: orange;
+    color: #fff;
+}
+/* .icons{
+    position: relative;
+    bottom: 5%;
+    left: 10%;
+    color: #fff;
+}
+.icons span:not(:last-child){
+    padding-right: 1rem;
+}
+.icons span{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
+.icons span:hover{
+    color: #dd9a05;
+} */
+.content-home{
+    position: relative;
+    margin-left: 4rem;
+}
+
+@media screen and (min-width:760px){
+    
+    .content-home h1{
+       font-size: 3rem;
+   }
+   .content-home{
+       margin-left: 4rem;
+   }
+   .image{
+       text-align: center;
+   }
+   
+}
+@media  screen and (max-width:760px) {
+    .content-home h5,h1{
+        font-size: 2rem;
+        
+    }
+    .content-home{
+        margin-left: 2rem;
+    }
+}
+
+/* about-section */
+.about-title{
+    text-align: center;
+}
+.about{
+    margin-bottom: 100px;
+}
+.about-image img{
+    width: 350px;
+    box-shadow: 10px 10px 0 2px #db0e0e;
+  
+}
+.about-image{
+    text-align: center;
+    
+}
+.about-btn:hover{
+    background-color: orange;
+    color: #fff;
+}
+.about-btn{
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    margin-top: 40px;
+    /* box-shadow: 0px 0px 2px 1px #f39110; */
+    border: 2px solid orange;
+    
+}
+.about-content{
+    padding-top: 50px;
+}
+.about-link{
+    position: relative;
+}
+.about-link::before{
+    content: "";
+    width: 16%;
+    height: 2px;  
+    background-color: orange;
+    position: absolute;
+    bottom: -10px;
+    transition: all 250ms ease-in-out;
+
+}
+@media  screen and (max-width:700px) {
+    .about-link{
+        position: relative;
+    }
+    .about-link::before{
+        content: "";
+        width: 37%;
+        height: 2px;  
+        background-color: orange;
+        position: absolute;
+        bottom: -10px;
+        transition: all 250ms ease-in-out;
+    
+    }
+    .about-content{
+        padding-inline: 20px;
+    }
+}
