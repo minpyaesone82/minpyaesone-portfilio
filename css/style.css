@@ -6,26 +6,25 @@
 }
 body{
     scroll-behavior: smooth;
-    overflow-y: scroll;
+    overflow: scroll;
+    font-family: "Poppins",sans-serif;
 }
 
-.header{
-    background-color: #333;
-}
+
 
 /* navbar */
+.navbar{
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
 .nav-item{
     padding: 0 1rem;
 }
 .nav-link{
     position: relative;
     cursor: pointer;
-}
-
-.header{
-    position: sticky;
-    top: 0;
-    z-index: 99;
 }
 .navbar-nav {
     padding: 1px;
@@ -46,7 +45,7 @@ body{
 @media screen  and (max-width:768px){
     .navbar-brand{
         padding-left:5px ;
-        line-height: 50px;
+        line-height: 30px;
     }
     .navbar ul{
         text-align: center;
@@ -58,20 +57,20 @@ body{
        border: none !important;
        color: orange !important ;
    }
-    
 
 }
 .icons{
     position: absolute;
     bottom: 5%;
-    left: 10%;
+    left: 2%;
     color: #fff;
+    display: grid;
 }
 .icons span:not(:last-child){
     padding-right: 1rem;
 }
 .icons span{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: all 300ms ease-in-out;
 }
@@ -80,9 +79,9 @@ body{
 }
 @media screen and (max-width:700px) {
     .icons{
-        bottom: -8%;
+        bottom: -5%;
         left: 90%;
-
+        position: absolute;
     }
 }
 
@@ -110,23 +109,6 @@ body{
     background-color: orange;
     color: #fff;
 }
-/* .icons{
-    position: relative;
-    bottom: 5%;
-    left: 10%;
-    color: #fff;
-}
-.icons span:not(:last-child){
-    padding-right: 1rem;
-}
-.icons span{
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: all 300ms ease-in-out;
-}
-.icons span:hover{
-    color: #dd9a05;
-} */
 .content-home{
     position: relative;
     margin-left: 4rem;
@@ -135,7 +117,7 @@ body{
 @media screen and (min-width:760px){
     
     .content-home h1{
-       font-size: 3rem;
+       font-size: 2.5rem;
    }
    .content-home{
        margin-left: 4rem;
@@ -160,7 +142,8 @@ body{
     text-align: center;
 }
 .about{
-    margin-bottom: 100px;
+    display: flex;
+    align-items: center;
 }
 .about-image img{
     width: 350px;
@@ -218,3 +201,123 @@ body{
         padding-inline: 20px;
     }
 }
+
+/* education-section */
+.education{
+    background: url(../image/e2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+   
+}
+.card{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(3px);
+    border-radius: 20px;
+    color: white;
+    margin: 20px 20px;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width:700px){
+    .card{
+        width: 350px;
+    }
+    .edu-title{
+        padding-top: 25px;
+    }
+}
+
+/* contact-section */
+.contact{
+    background: url(..//image/com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+.contact-btn{
+    background-color: transparent;
+    color: #fff;
+    border-radius:5px;
+    border: 2px solid orange;
+    padding: 10px 20px;
+}
+.contact-btn:hover{
+    background-color: orange;
+
+}
+.contact i{
+    padding-right: 20px;
+}
+.contact .icofont-phone{
+    font-size: 25px;
+}
+.contact .one{
+    margin-bottom: 20px;
+}
+@media screen and (max-width:700px){
+    .about-title{
+        padding-top: 40px;
+    }
+    .about-title .about-link{
+        padding-top: 20px;
+    }
+}
+
+/* project-section */
+.project{
+    background: url(..//image/contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100%;
+}
+.inner:hover img{
+    transform:scale(1.2);
+}
+.inner img  {
+    transition: ease all 300ms;
+}
+.inner{
+    overflow: hidden;
+}
+.card-pro {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.project-link{
+    position: relative;
+}
+.project-link::before{
+    content: "";
+    width: 13%;
+    height: 2px;  
+    background-color: orange;
+    position: absolute;
+    bottom: -10px;
+    transition: all 250ms ease-in-out;
+
+}
+@media screen and (max-width:700px){
+    .project-link::before{
+        content: "";
+        width: 28%;
+        height: 2px;  
+        background-color: orange;
+        position: absolute;
+        bottom: -10px;
+        transition: all 250ms ease-in-out;
+    
+    }
+    .last-card{
+        margin-bottom: 4rem;
+    }
+}
+@media screen and (min-width:800px){
+    #project .container .card{
+        width: 15rem;
+    }
+}
+
+

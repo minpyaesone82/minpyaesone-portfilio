@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MPS Portfilio</title>
+    <title>MinPyaeSone</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,42 +14,43 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" >
     <link rel="stylesheet" href="data/icofont/icofont.css">
     <link rel="stylesheet" href="data/matthieua-WOW-07a2b50/css/libs/animate.css">
+    <link rel="icon" href="image/mps-logo-white.png">
 </head>
 <body>
-    <div class="header">
+    <!-- navbar-section -->
       <nav class="navbar navbar-expand-lg shadow navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand    " href="#"  style="font-weight:bold ; color: orange;  ">MinPyaeSone</a>
+          <a class="navbar-brand" href="#home"  style="font-weight:bold ; color: orange; padding-right: 30px; "> MinPyaeSone</a>
           <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
             <ul class="navbar-nav ">
               <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item ">
                 <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#Education">Education</a>
+                <a class="nav-link" href="#education">Education</a>
               </li>
               <li class="nav-item ">
-                <a class="nav-link" href="#">Project</a>
+                <a class="nav-link" href="#project">Project</a>
               </li>
               <li class="nav-item  ">
-                <a class="nav-link" href="#Contact">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               
             </ul>
           </div>
         </div>
       </nav>
-    </div>
+    
   <!-- home-section -->
-    <section class="home vh-100 d-grid align-items-center" id="home"> 
+    <section class="home vh-100 d-grid align-items-center " id="home"> 
       <div class="container ">
-        <div class="row py-5 d-flex justify-content-center align-items-center">
+        <div class="row pt-3 d-flex justify-content-center align-items-center">
           <div class="col-12 col-lg-6">
             <div class="content-home ">
           
@@ -58,8 +59,8 @@
               </h6 >
               <h6 style="margin-bottom: 30px;" >My personal Website</h6 >
               <h1 style="color: orange;">HELLO </h1> 
-              <h1 style="color: #bebebe;">I'am <span class="type"></span></h1> 
-              <a href="#" class="btn shadow" style="padding-block: 9px;
+              <h1 style="color: #fff;">I'am <span id="type" style="color: orange;"></span></h1> 
+              <a href="#contact" class="btn  btn-home shadow" style="padding-block: 9px;
               border: 1px solid orange;
               padding-inline: 30px; color: #fff; margin-top: 20px;">Contact me</a>
             </div>
@@ -79,20 +80,20 @@
       </div>
     </section>
     <!-- about-section -->
-    <section class="about" id="about">
+    <section class="about " id="about">
       <div class="container">
-        <div class="row py-5 " style="margin-top: 3rem;"> 
-          <div class="about-title" style="margin-block: 40px;">
+        <div class="row  py-5" style="margin-bottom: 30px;"> 
+          <div class="about-title" style="padding-block: 40px;" data-aos="fade-up">
             <h1 class="about-link">About Me</h1>
           </div>
           <div class="col-12 col-lg-7">
-            <div class="about-image " >
+            <div class="about-image "data-aos="fade-right" >
               <img src="image/jap3.jpg" alt="">
             </div>
           </div>
       
           <div class="col-12 col-lg-5">   
-            <div class="about-content wow bounceInUp">
+            <div class="about-content "data-aos="zoom-in-up" >
               <div class="about" style="margin-bottom: 20px;" >
                 <h3 style="font-weight: bold;" >About</h3>
               </div>
@@ -105,22 +106,180 @@
         </div>
       </div>
     </section>
+    <!-- education-section -->
+    <section class="education" id="education">
+      <div class="container">
+        <div class="row">`
+          <div class="about-title edu-title" style="margin-block: 40px;" data-aos="zoom-in">
+            <h1 class="about-link" style="color: #fff;">Education</h1>
+          </div>
+          <div class="row d-flex justify-content-center" >
+          <col-12 class="col-md-6">
+          <div class="card " data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom" >
+            <div class="card-body">
+              <div class="title" style="background-color: #333; color: #fff;border-radius: 10px;"><p style="padding-block: 10px; padding-left: 10px;">Hight School</p></div>
+              <h6 style="margin-bottom: 20px;">No.2 Basic Education High School ,TKT</h6>
+              <h5 style="color: orange;">Jun 2016</h5>
+              
+              <p style="margin-top: 10px;">2015-2016 တွင်အခြေခံပညာအထက်တန်းကျောင်းအောင်မြင်ခဲ့ပြီး Web Dev နည်းပညာကိုစိတ်၀င်စားခဲ့ပါတယ်။</p>
+            </div>
+          </div>
+          <div class="card" data-aos="fade-up"
+          data-aos-anchor-placement="bottom-bottom">
+            <div class="card-body">
+              <div class="title" style="background-color: #333; color: #fff; border-radius: 10px;"><p style="padding-block: 10px; padding-left: 10px;">Wed Design</p></div>
+              <h6 style="margin-bottom: 20px;">MMS IT Solution</h6>
+              <h5 style="color: orange;">Nov 2020</h5>
+              
+              <p style="margin-top: 10px;">MMS IT တွင်လက်ရှိWeb Designပညာရပ်အားသင်ယူလျက်ရှိပြီ Web Developmentကိုဆက်လက်လေ့လား
+            သွားမှာဖြစ်ပါတယ်။</p>
+            </div>
+          </div>
+          
+        </col-12> 
+        <col-12 class="col-md-6 mb-3">
+        <div class="card" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+          <div class="card-body">
+            <div class="title" style="background-color: #333; color: #fff;border-radius: 10px;"><p style="padding-block: 10px; padding-left: 10px;">University</p></div>
+            <h6 style="margin-bottom: 20px;">East Yangon University</h6>
+            <h5 style="color: orange;">Dec 2017</h5>
+            
+            <p style="margin-top: 10px;">East Yangon University တွင် Mathermatics major ယူပြီး Final Year မှာပညာရပ်သင်ယူနေသောကျောင်းသားဖြစ်ပါတယ်။</p>
+          </div>
+        </div>
+        <div class="card" data-aos="fade-up"
+        data-aos-anchor-placement="bottom-bottom">
+          <div class="card-body">
+            <div class="title" style="background-color: #333; color: #fff; border-radius: 10px;"><p style="padding-block: 10px; padding-left: 10px;">Diploma in ICT </p></div>
+            <h6 style="margin-bottom: 20px;">Ymax University</h6>
+            <h5 style="color: orange;">Jun 2020</h5>
+            
+            <p style="margin-top: 10px;">Ymax University တွင် Diploma in Informartion and Communication Technology ကိုတတ်ရောက်သင်ကြားခဲ့ပါတယ်။</p>
+          </div>
+        </div>
+        
+      </col-12> 
+      </div>
+        </div>
+      </div>
+    </section>
+     <!-- project-section -->
+     <section class="project  " style="display: flex; justify-content: center; align-items: center;" id="project">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="about-title edu-title" style="margin-block: 40px;" data-aos="zoom-in">
+              <h1 class="project-link" style="color: #fff;padding-top: 40px; font-weight: bold;">Project</h1>
+              
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card" data-aos="fade-up">
+              <div class="inner">
+                <img src="image/project-1.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: #fff; margin-bottom: 30px;">Admin Dashboard</h5>
+                <p class="card-text" >My project of swd class mmsit.</p>
+                <a href="https://focused-lamport-de8b61.netlify.app" class="btn btn-primary">Watch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card"data-aos="zoom-in-up">
+              <div class="inner">
+                <img src="image/60ef9f4051f6659bf723ed6ce06a2016.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: #fff; margin-bottom: 30px;">Marketing Project</h5>
+                <p class="card-text" >My project of swd class mmsit.</p>
+                <a href="https://clever-lichterman-64a9ae.netlify.app/" class="btn btn-primary">Watch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card"data-aos="fade-up">
+              <div class="inner">
+                <img src="image/60ef9f4051f6659bf723ed6ce06a2016.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: #fff; margin-bottom: 30px;">Exchange Project</h5>
+                <p class="card-text" >My project of swd class mmsit.</p>
+                <a href="https://zealous-engelbart-c200ae.netlify.app/" class="btn btn-primary">Watch</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card last-card"data-aos="zoom-in-up">
+              <div class="inner">
+                <img src="image/project-3.jpg" class="card-img-top" alt="..." style="height: 200px; object-fit: cover;">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title" style="color: #fff; margin-bottom: 30px;">Personal Portfilio</h5>
+                <p class="card-text" >My final project of swd  at MMSIT.</p>
+                <a href="#home" class="btn btn-primary">Watch</a>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- contact-section -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="about-title edu-title" style="margin-block: 40px;" data-aos="zoom-in">
+              <h1 class="about-link" style="color: #fff;">Contact</h1>
+              <p style="color: #fff;margin-top: 30px;">Get In Touch</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 text-white mt-5 mb-5  " data-aos="fade-up">
+            <h3 style="color: orange; font-weight: bold;">Yangon</h3>
+            <h4 class="text-white-50 mt-1">Aungthuka (27)streets</h4>
+            <h5 class="mt-5 one" > <i class="icofont-email"></i>minpyaes12@gmail.com </h5>
+            <i class="icofont-phone"></i>+95 967 377 1179
+          </div>
+          <div class="col-12 col-lg-6"> 
+            <form action="#" class="" data-aos="fade-down">
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Name">
+              </div>
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group mb-3">
+                <textarea type="text" class="form-control" rows="5" placeholder="Message"></textarea>
+              </div>
+              <div class="" >
+                <a class=" btn contact-btn mb-5 mt-3" >Contact me</a>
+                </div>
+              
+                
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+   
     
 
+    
   
    
 
     <script src="js/bootstrap.min.js"></script>
     <script src=https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js></script>
     <script src="data/matthieua-WOW-07a2b50/dist/wow.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/wowjs@1.1.3/dist/wow.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.7.1/dist/gsap.min.js"></script>
     <script src=https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js></script>
     <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
     <script src=https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js></script>
     <script src=https://cdn.jsdelivr.net/npm/letteringjs@0.7.0/jquery.lettering.min.js></script>
-    <script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>
-
+    <script src="js/app.js"></script>
 
 
 
